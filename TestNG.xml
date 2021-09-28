@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="E_Banking_version1">
+
+	<listeners>
+		<listener class-name="com.banking.utilities.Reporting" />
+	</listeners>
+
+	<test name="BankingApp Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!--class name="com.banking.testcases.TestCaseLogin" />-->
+			<class name="com.banking.testcases.DatadrivenLogin" />
+			<!--<class name = "com.banking.testcases.AddNewCustomer_03"/>-->
+
+		</classes>
+		
+	
+	</test>
+
+</suite>
